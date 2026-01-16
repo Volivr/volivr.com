@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Volivr | Phone-Based Content Platform</title>
+  <meta name="description" content="Cloud platform for IVR menus, bulletins, voicemail, and audio content delivery by phone." />
+
+  <!-- UnoCSS Runtime -->
+  <script>
+    window.__unocss = {
+      theme: {
+        colors: {
+          brand: '#0daeaf',
+        },
+      },
+      shortcuts: {
+        'container': 'max-w-5xl mx-auto px-6',
+        'card': 'rounded-xl border border-white/10 bg-white/[0.02] p-6',
+        'btn': 'inline-flex items-center justify-center rounded-lg px-5 py-2.5 font-medium transition-all',
+        'btn-primary': 'btn bg-brand text-black hover:bg-brand/90',
+        'btn-ghost': 'btn border border-white/20 text-white hover:bg-white/5',
+        'muted': 'text-neutral-400',
+      },
+    }
+  </script>
+  <script src="https://unpkg.com/@unocss/runtime"></script>
+
+  <style>
+    :root { color-scheme: dark; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+  </style>
+</head>
+
+<body class="min-h-screen bg-neutral-950 text-neutral-100">
+
+<!-- Header -->
+<header class="border-b border-white/5 sticky top-0 bg-neutral-950/80 backdrop-blur-sm z-50">
+  <div class="container h-14 flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2">
+      <div class="h-7 w-7 rounded-lg bg-brand/10 border border-brand/20 grid place-items-center">
+        <span class="text-xs font-bold text-brand">V</span>
+      </div>
+      <span class="font-semibold text-brand/90">Volivr</span>
+    </a>
+
+    <nav class="hidden sm:flex items-center gap-6 text-sm">
+      <a href="#features" class="text-neutral-300 hover:text-white">Features</a>
+      <a href="#contact" class="text-neutral-300 hover:text-white">Contact</a>
+    </nav>
+
+    <a class="btn-ghost text-sm bg-brand/40 hover:bg-brand/60 h-2" href="https://partner.volivr.com/app/" target="_blank">Partner login</a>
+  </div>
+</header>
+
+<main >
+  <!-- Hero -->
+  <section class="container py-20 sm:py-28">
+    <div class="max-w-3xl">
+      <div class="inline-block px-3 py-1 rounded-full border border-brand/20 bg-brand/5 text-xs font-medium text-brand mb-6">
+        Cloud-based phone platform
+      </div>
+
+      <h1 class="text-4xl sm:text-5xl font-bold leading-tight mb-6">
+        IVR menus, bulletins, and audio content—accessible by phone.
+      </h1>
+
+      <p class="text-lg text-neutral-300 leading-relaxed mb-10 max-w-2xl">
+        Volivr is a cloud platform for delivering structured phone experiences:
+        interactive menus, voicemail, recorded content, courses, and more.
+      </p>
+
+      <div class="flex flex-col sm:flex-row gap-3">
+        <a class="btn-primary" href="#contact">Request access</a>
+        <a class="btn-ghost" href="#features">See what it does</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="border-t border-white/5">
+    <div class="container py-20">
+      <h2 class="text-2xl font-bold mb-3">What you can build</h2>
+      <p class="text-neutral-400 mb-12 max-w-2xl">
+        From simple voice menus to full content libraries, Volivr handles the infrastructure so you can focus on your content.
+      </p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card">
+          <h3 class="font-semibold mb-2">IVR Menus</h3>
+          <p class="text-sm text-neutral-400">Multi-level phone menus with routing, transfers, and custom flows.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="font-semibold mb-2">Bulletins & Announcements</h3>
+          <p class="text-sm text-neutral-400">Time-based or event-based audio messages for callers.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="font-semibold mb-2">Voicemail</h3>
+          <p class="text-sm text-neutral-400">Capture messages, route them, and manage playback.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="font-semibold mb-2">Audio Libraries</h3>
+          <p class="text-sm text-neutral-400">Host shiurim, speeches, courses—organized and searchable by phone keypad.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="font-semibold mb-2">Scheduled Content</h3>
+          <p class="text-sm text-neutral-400">Set content availability windows based on time or calendar rules.</p>
+        </div>
+
+        <div class="card">
+          <h3 class="font-semibold mb-2">Call Routing</h3>
+          <p class="text-sm text-neutral-400">Forward calls based on menus, time of day, or availability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="border-t border-white/5 bg-white/[0.01]">
+    <div class="container py-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+        <div>
+          <h2 class="text-2xl font-bold mb-4">Simple setup, flexible control</h2>
+          <p class="text-neutral-400 leading-relaxed mb-6">
+            Volivr is a hosted platform. You manage your content and flows through our interface—no coding required.
+            We handle the infrastructure, telephony integration, and uptime.
+          </p>
+          <p class="text-neutral-400 leading-relaxed">
+            As we grow, we're working toward more automation, better reporting, and tighter integrations.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <div class="card border-white/5">
+            <div class="flex items-start gap-3">
+              <div class="h-8 w-8 rounded-lg bg-brand/10 grid place-items-center shrink-0 mt-0.5">
+                <span class="text-sm">📞</span>
+              </div>
+              <div>
+                <div class="font-medium mb-1">Managed hosting</div>
+                <div class="text-sm text-neutral-400">We run the platform. You focus on content and structure.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-white/5">
+            <div class="flex items-start gap-3">
+              <div class="h-8 w-8 rounded-lg bg-brand/10 grid place-items-center shrink-0 mt-0.5">
+                <span class="text-sm">🎙️</span>
+              </div>
+              <div>
+                <div class="font-medium mb-1">Audio uploads</div>
+                <div class="text-sm text-neutral-400">Upload recordings, organize into categories, set playback rules.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card border-white/5">
+            <div class="flex items-start gap-3">
+              <div class="h-8 w-8 rounded-lg bg-brand/10 grid place-items-center shrink-0 mt-0.5">
+                <span class="text-sm">🔧</span>
+              </div>
+              <div>
+                <div class="font-medium mb-1">Ongoing improvements</div>
+                <div class="text-sm text-neutral-400">We're actively building new features like better logs and workflow automation.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="border-t border-white/5">
+    <div class="container py-20">
+      <div class="max-w-2xl mx-auto">
+        <h2 class="text-2xl font-bold mb-3">Get in touch</h2>
+        <p class="text-neutral-400 mb-10">
+          Volivr is currently available to select partners and organizations.
+          Tell us about your use case and we'll reach out.
+        </p>
+
+        <form class="space-y-6" id="contactForm">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <label class="block">
+              <span class="text-sm font-medium mb-2 block">Name</span>
+              <input
+                  name="name"
+                  id="name"
+                  required
+                  class="w-full rounded-lg bg-white/5 border border-white/10  py-2.5 outline-none focus:border-brand/50 focus:ring-2 focus:ring-brand/20 transition-all"
+              />
+            </label>
+            <label class="block">
+              <span class="text-sm font-medium mb-2 block">Email</span>
+              <input
+                  name="email"
+                  id="email"
+                  type="email"
+                  required
+                  class="w-full rounded-lg bg-white/5 border border-white/10 py-2.5 outline-none focus:border-brand/50 focus:ring-2 focus:ring-brand/20 transition-all"
+              />
+            </label>
+          </div>
+
+          <label class="block">
+            <span class="text-sm font-medium mb-2 block">Tell us about your project</span>
+            <textarea
+                name="message"
+                id="message"
+                rows="4"
+                required
+                class="w-full rounded-lg bg-white/5 border border-white/10 py-2.5 outline-none focus:border-brand/50 focus:ring-2 focus:ring-brand/20 transition-all"
+            ></textarea>
+          </label>
+
+          <button type="submit" class="btn-primary w-full sm:w-auto px-8">
+            Send message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="border-t border-white/5">
+  <div class="container py-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-sm text-neutral-500">
+    <div>© <span id="year"></span> Volivr Inc</div>
+    <div class="flex gap-6">
+      <a href="/terms.html" class="hover:text-neutral-300">Terms</a>
+      <a href="/privacy.html" class="hover:text-neutral-300">Privacy</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Handle form submission with obfuscated email
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Obfuscated email (split to avoid bot scraping)
+    const user = 'support';
+    const domain = 'volivr.com';
+    const mailto = `mailto:${user}@${domain}`;
+
+    // Build mailto URL with form data
+    const subject = encodeURIComponent(`Contact from ${name}`);
+    const body = encodeURIComponent(`From: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+    window.location.href = `${mailto}?subject=${subject}&body=${body}`;
+  });
+</script>
+</body>
+</html>
